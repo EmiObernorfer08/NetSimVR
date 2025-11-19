@@ -1,8 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CLI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public void LoadNewScene()
+    {
+        SceneManager.LoadScene("CLI_Scene");
+    }
     void Start()
     {
         
