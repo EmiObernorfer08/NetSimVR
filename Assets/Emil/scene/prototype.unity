@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 486927505}
   - component: {fileID: 486927504}
   - component: {fileID: 486927503}
+  - component: {fileID: 486927507}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: CablePort
@@ -348,6 +349,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486927507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486927502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c791acd0e0eba4e9da00c5fee586ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PortName: 
+  ConnectedPort: {fileID: 0}
 --- !u!1001 &620358618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -423,6 +438,8 @@ GameObject:
   - component: {fileID: 798879095}
   - component: {fileID: 798879094}
   - component: {fileID: 798879093}
+  - component: {fileID: 798879097}
+  - component: {fileID: 798879098}
   m_Layer: 0
   m_Name: Cube
   m_TagString: CablePort
@@ -519,6 +536,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &798879097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798879092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c791acd0e0eba4e9da00c5fee586ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PortName: 
+  ConnectedPort: {fileID: 0}
+--- !u!114 &798879098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798879092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c791acd0e0eba4e9da00c5fee586ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PortName: 
+  ConnectedPort: {fileID: 0}
 --- !u!1 &1032669002
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +844,9 @@ MonoBehaviour:
   cablePrefab: {fileID: 7676369228144065098, guid: 238d684c176b41e4e8a26dd5f7d798dd, type: 3}
   interactDistance: 3
   placeKey: 101
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
