@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CLI : MonoBehaviour
+public class CLI_Loader : MonoBehaviour
 {
 
     public void LoadNewScene()
