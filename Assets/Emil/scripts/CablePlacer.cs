@@ -59,6 +59,20 @@ public class CablePlacer : MonoBehaviour
         {
             Debug.Log("[CablePlacer] Punkt B gesetzt: " + port.name + " -> Erstelle Kabel");
             CreateCable(firstPoint, port);
+
+            // Verbinde die Ports
+            Port portA = firstPoint.GetComponent<Port>();
+            Port portB = port.GetComponent<Port>();
+            if (portA != null && portB != null)
+            {
+                portA.ConnectTo(portB);
+                portB.ConnectTo(portA);
+            }
+            else
+            {
+                Debug.LogWarning("[CablePlacer] Einer der Ports hat kein Port-Skript.");
+            }
+
             firstPoint = null;
         }
     }
