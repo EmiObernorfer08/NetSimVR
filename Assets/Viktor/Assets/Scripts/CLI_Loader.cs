@@ -8,14 +8,9 @@ public class CLI_Loader : MonoBehaviour
     {
         SceneManager.LoadScene("CLI_Scene");
     }
-    void Start()
+    
+    public void LoadMainMenu()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.LoadScene("ViktorScene");
     }
 }
