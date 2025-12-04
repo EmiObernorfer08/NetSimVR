@@ -1,0 +1,6 @@
+Ein Kunde braucht einen neuen Router und will diesen mit dem Internet verbinden und mit seinem PC,
+um eine Netzverbindung zu haben. Der Router wird über den eigenen Laptop konfiguriert 
+Der Router ist bereits aufgestellt, hat Strom und muss noch verbunden und konfiguriert werden.
+Aufgabe: Verbinde den Router mit der Netzdose in der Wand und den PC mit dem Router
+	 Konfiguriere den Router (Hostname und IP Adresse)
+	 Teste den Aufbau
