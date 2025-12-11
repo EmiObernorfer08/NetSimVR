@@ -259,6 +259,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d77bd6fbb0a73b64cab1c9b23e011226, type: 3}
   m_PrefabInstance: {fileID: 165735047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &197284565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 57ad6906d2aaddf4182acea5f1b0f8f6, type: 3}
+  m_PrefabInstance: {fileID: 745831707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &205560861
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,6 +276,7 @@ GameObject:
   - component: {fileID: 205560864}
   - component: {fileID: 205560863}
   - component: {fileID: 205560862}
+  - component: {fileID: 205560866}
   m_Layer: 0
   m_Name: Router
   m_TagString: Untagged
@@ -364,9 +370,26 @@ Transform:
   m_LocalPosition: {x: -2.733, y: 1.396, z: -1.523}
   m_LocalScale: {x: 0.79, y: 0.0895238, z: 0.46967}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 325759580}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205560866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205560861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a04cac020d9b449b61571b3befa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeviceName: 
+  IPAddress: 
+  Port: {fileID: 0}
+  RoutingTable: []
 --- !u!1 &223447475
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,12 +606,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325759576}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.065, y: 1.403, z: -1.761}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4202532, y: 0.07819115, z: -0.5067389}
+  m_LocalScale: {x: 0.06329114, y: 0.5585107, z: 0.10645773}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 205560865}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &325759581
 MonoBehaviour:
@@ -604,6 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PortName: 
   ConnectedPort: {fileID: 0}
+  ParentDevice: {fileID: 0}
 --- !u!1001 &354849534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -901,14 +925,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57ad6906d2aaddf4182acea5f1b0f8f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1633476506}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57ad6906d2aaddf4182acea5f1b0f8f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 745831711}
   m_SourcePrefab: {fileID: 100100000, guid: 57ad6906d2aaddf4182acea5f1b0f8f6, type: 3}
 --- !u!4 &745831708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57ad6906d2aaddf4182acea5f1b0f8f6, type: 3}
   m_PrefabInstance: {fileID: 745831707}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &745831711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197284565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a04cac020d9b449b61571b3befa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeviceName: 
+  IPAddress: 
+  Port: {fileID: 0}
+  RoutingTable: []
 --- !u!1 &801333227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,12 +2073,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633476502}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6924, y: 1.3429996, z: -1.634}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalRotation: {x: -0, y: 0.99974453, z: -0, w: 0.022602826}
+  m_LocalPosition: {x: -0.056618657, y: 0.49141026, z: 0.2726488}
+  m_LocalScale: {x: 0.049999993, y: 0.05, z: 0.049999993}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 745831708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1633476507
 MonoBehaviour:
@@ -2048,6 +2094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PortName: 
   ConnectedPort: {fileID: 0}
+  ParentDevice: {fileID: 0}
 --- !u!1001 &1669922887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2786,8 +2833,6 @@ SceneRoots:
   - {fileID: 64205868}
   - {fileID: 205560865}
   - {fileID: 223447477}
-  - {fileID: 325759580}
-  - {fileID: 1633476506}
   - {fileID: 1669922887}
   - {fileID: 1625254300}
   - {fileID: 1882820533}
