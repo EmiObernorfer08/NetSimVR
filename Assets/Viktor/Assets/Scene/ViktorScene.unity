@@ -777,7 +777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PortName: Router Port
-  ConnectedPort: {fileID: 1633476507}
+  ConnectedPort: {fileID: 0}
   ParentDevice: {fileID: 0}
 --- !u!4 &325929378 stripped
 Transform:
@@ -3088,7 +3088,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348372909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f239da28d74fee546922c5f1fead0636, type: 3}
   m_Name: 
