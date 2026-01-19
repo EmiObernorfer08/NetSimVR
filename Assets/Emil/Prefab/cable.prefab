@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8082885957412042784}
   m_Layer: 0
   m_Name: cable
-  m_TagString: Untagged
+  m_TagString: cable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

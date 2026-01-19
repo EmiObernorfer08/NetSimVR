@@ -8,6 +8,8 @@ public class GlobalResetManager : MonoBehaviour
 
     private List<GameObject> persistentObjects = new List<GameObject>();
 
+    [SerializeField] private string resetTag = "cable";
+
     private void Awake()
     {
         if (Instance != null)
@@ -20,36 +22,44 @@ public class GlobalResetManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // 🔹 Registriert Objekte, die persistent sind
-    public void RegisterPersistentObject(GameObject obj)
+    private void Update()
     {
+        // 🔥 Reset mit R-Taste
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            FullReset();
+        }
+    }
+
+    // Persistente Objekte registrieren
+    public void Register(GameObject obj)
+    {
+        if (obj == gameObject) return;
+
         if (!persistentObjects.Contains(obj))
             persistentObjects.Add(obj);
     }
 
-    // 🔹 Reset Button Funktion
+    // 🔥 Reset: NUR persistente Objekte mit Tag "cable"
     public void FullReset()
     {
-        // Alle DontDestroyOnLoad Objekte löschen
-        foreach (GameObject obj in persistentObjects)
+        for (int i = persistentObjects.Count - 1; i >= 0; i--)
         {
-            if (obj != null)
+            GameObject obj = persistentObjects[i];
+
+            if (obj == null)
+            {
+                continue;
+            }
+
+            if (obj.CompareTag(resetTag))
+            {
                 Destroy(obj);
+                persistentObjects.RemoveAt(i);
+            }
         }
 
-        persistentObjects.Clear();
-
-        // Wichtig: TimeScale zurücksetzen
         Time.timeScale = 1f;
-
-        // Startscene neu laden
-        SceneManager.LoadScene(0);
-    }
-    public void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            FullReset();
-        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

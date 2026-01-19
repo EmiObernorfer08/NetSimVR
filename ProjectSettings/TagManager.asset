@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CablePort
   - SceneCube
+  - cable
   layers:
   - Default
   - TransparentFX

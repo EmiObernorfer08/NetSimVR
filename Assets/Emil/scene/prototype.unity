@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 37502200}
   - component: {fileID: 37502199}
   - component: {fileID: 37502201}
+  - component: {fileID: 37502202}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -240,6 +241,18 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &37502202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37502198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &486927502
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +266,7 @@ GameObject:
   - component: {fileID: 486927504}
   - component: {fileID: 486927503}
   - component: {fileID: 486927507}
+  - component: {fileID: 486927508}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: CablePort
@@ -364,6 +378,18 @@ MonoBehaviour:
   PortName: 
   ConnectedPort: {fileID: 0}
   ParentDevice: {fileID: 0}
+--- !u!114 &486927508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486927502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &620358618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,6 +452,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948462302}
+    - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1948462304}
   m_SourcePrefab: {fileID: 100100000, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
 --- !u!1 &798879092
 GameObject:
@@ -440,6 +469,7 @@ GameObject:
   - component: {fileID: 798879094}
   - component: {fileID: 798879093}
   - component: {fileID: 798879097}
+  - component: {fileID: 798879098}
   m_Layer: 0
   m_Name: Cube
   m_TagString: CablePort
@@ -551,6 +581,18 @@ MonoBehaviour:
   PortName: 
   ConnectedPort: {fileID: 0}
   ParentDevice: {fileID: 0}
+--- !u!114 &798879098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798879092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1047885622
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +606,8 @@ GameObject:
   - component: {fileID: 1047885625}
   - component: {fileID: 1047885624}
   - component: {fileID: 1047885623}
+  - component: {fileID: 1047885629}
+  - component: {fileID: 1047885628}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -672,6 +716,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1047885628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047885622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1047885629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047885622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1258747935
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +751,7 @@ GameObject:
   - component: {fileID: 1258747938}
   - component: {fileID: 1258747937}
   - component: {fileID: 1258747936}
+  - component: {fileID: 1258747939}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -751,6 +820,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1258747939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258747935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1739267268
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +844,7 @@ GameObject:
   - component: {fileID: 1739267271}
   - component: {fileID: 1739267270}
   - component: {fileID: 1739267269}
+  - component: {fileID: 1739267273}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -860,6 +942,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1739267273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739267268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1948462301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
@@ -897,6 +991,18 @@ MonoBehaviour:
   interactLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1948462304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948462301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
