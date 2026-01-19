@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3344662942337000560}
   - component: {fileID: 9129692443834637598}
+  - component: {fileID: -8082885957412042784}
   m_Layer: 0
   m_Name: cable
   m_TagString: Untagged
@@ -142,3 +143,15 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &-8082885957412042784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676369228144065098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6bb4ab693e8845ba479ef6a441d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
