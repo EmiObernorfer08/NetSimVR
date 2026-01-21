@@ -24,11 +24,6 @@ public class GlobalResetManager : MonoBehaviour
 
     private void Update()
     {
-        // 🔥 Reset mit R-Taste
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            FullReset();
-        }
     }
 
     // Persistente Objekte registrieren
