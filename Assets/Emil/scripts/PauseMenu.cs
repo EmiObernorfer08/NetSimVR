@@ -42,7 +42,6 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true;
         crosshairUI.SetActive(false);
     }
-
     public void Quit()
     {
         Application.Quit();
